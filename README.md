@@ -19,7 +19,7 @@ if not shared.__API_Connected then -- // You dont have to but ok.
 
     API:AddCommand("test", function(Player, args)
         -- // Your code here~
-        return "Test successful!"; -- // Sends back to the console
+        return "Test successful!"; -- // Sends back to the console only supreme ranked can see
     end, "Owner", "Moderator") -- // VIP wont be able to use this command since we flagged these two ranks
 
     API:AddCommand("ping", function(Player, args)
@@ -32,9 +32,18 @@ else
 end
 ```
 
-### Send Command
-```lua
-API:SendCommand("!ping");
+- Only supreme ranked can see logs being sent to console plus connected and disconnected users alongside other commands
+
+### Built in commands
+```
+```lua 
+API:SendCommand("!help");
+```
+```lua 
+API:SendCommand("!players");
+```
+```lua 
+API:SendCommand("!shutdown");
 ```
 
 #### Build these however you like :)~
