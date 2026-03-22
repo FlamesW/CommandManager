@@ -5,7 +5,7 @@ if not shared.__API_Connected then -- // You dont have to but ok.
     local CommandManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/CommandManager/refs/heads/home/Module.luau"))();
 
     getgenv().API = CommandManager:Init({
-        WebSocketUrl = "wss://ws.postman-echo.com/raw",
+        WebSocketUrl = "wss://ws.postman-echo.com/raw", -- // Your Websocket here (I recommend using railway app)
         CommandPrefix = "!",
         -- ["SupremeRank"] = "God", -- // The name is "Owner" by default.
         ["Ranks"] = {
