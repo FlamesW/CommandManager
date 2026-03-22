@@ -1,0 +1,33 @@
+# Example Usage
+
+```lua
+if not shared.__API_Connected then -- // You dont have to but ok.
+    local CommandManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/CommandManager/refs/heads/home/Module.luau"))();
+
+    getgenv().API = CommandManager:Init({
+        WebSocketUrl = "wss://ws.postman-echo.com/raw",
+        CommandPrefix = "!",
+        -- ["SupremeRank"] = "God", -- // The name is "Owner" by default.
+        ["Ranks"] = {
+            ["Owner"] = {"0x0x0x0x0x0"}, -- // Script owner puts their hwid here.
+            ["Moderator"] = {"0987654321", "325235"},
+            ["VIP"] = {"some_hwid_string"},
+        }
+    }) 
+
+    API = getgenv().API
+
+    API:AddCommand("test", function(Player, args)
+        -- // Your code here~
+        return "Test successful!"; -- // Sends back to the console
+    end, "Owner", "Moderator") -- // VIP wont be able to use this command since we flagged these two ranks
+
+    API:AddCommand("ping", function(Player, args)
+        print("pong!");
+    end, nil) -- // Anyone can use this
+
+    API:SendCommand("!help"); -- // Built in command Open f9.
+else
+    warn("Command Manager is already connected");
+end
+```
