@@ -35,7 +35,6 @@ end
 - Only supreme ranked can see logs being sent to console plus connected and disconnected users alongside other commands
 
 ### Built in commands
-```
 
 ```lua 
 API:SendCommand("!help");
