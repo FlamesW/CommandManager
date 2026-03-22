@@ -1,5 +1,7 @@
 # Example Usage:
 
+- This operates like a server, You can execute stuff on others client and etc.
+
 ```lua
 if not shared.__API_Connected then -- // You dont have to but ok.
     local CommandManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/CommandManager/refs/heads/home/Module.luau"))();
