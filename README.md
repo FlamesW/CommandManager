@@ -1,4 +1,4 @@
-# Example Usage
+# Example Usage:
 
 ```lua
 if not shared.__API_Connected then -- // You dont have to but ok.
