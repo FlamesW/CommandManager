@@ -31,3 +31,10 @@ else
     warn("Command Manager is already connected");
 end
 ```
+
+### Send Command
+```lua
+API:SendCommand("!ping");
+```
+
+#### Build these however you like :)~
