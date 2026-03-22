@@ -36,12 +36,15 @@ end
 
 ### Built in commands
 ```
+
 ```lua 
 API:SendCommand("!help");
 ```
+
 ```lua 
 API:SendCommand("!players");
 ```
+
 ```lua 
 API:SendCommand("!shutdown");
 ```
