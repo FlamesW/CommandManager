@@ -40,6 +40,12 @@ end
 
 - Only supreme ranked can see logs being sent to console plus connected and disconnected users alongside other commands
 
+#### Sub Functions
+- returns true or false
+```lua
+API:IsSuperme() -- // Owner check
+```
+
 ### Built in commands
 
 ```lua 
