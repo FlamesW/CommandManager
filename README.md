@@ -12,7 +12,7 @@ if not shared.__API_Connected then -- // You dont have to but ok.
     getgenv().API = CommandManager:Init({
         WebSocketUrl = "Websocket_Url", -- // Your Websocket here (I recommend using railway app)
         CommandPrefix = "!",
-        ClientRun = true, -- // Fallback to run on client just for tests and etc...
+        -- ClientRun = true, -- // Fallback to run on client just for tests and etc...
         -- ["SupremeRank"] = "God", -- // The name is "Owner" by default.
         ["Ranks"] = {
             ["Owner"] = {"0x0x0x0x0x0"}, -- // Script owner puts their hwid here.
