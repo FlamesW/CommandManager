@@ -47,17 +47,6 @@ function API:SetRank(identifier, rank)
     return self
 end
 
-function API:AddUsersToRank(rank, users)
-    if type(users) == "table" then
-        for _, identifier in ipairs(users) do
-            self:SetRank(identifier, rank)
-        end
-    elseif users then
-        self:SetRank(users, rank)
-    end
-    return self
-end
-
 function API:GetRank(userId, hwid)
     if self.UserRanks[hwid] then
         return self.UserRanks[hwid]
